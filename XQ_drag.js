@@ -29,6 +29,8 @@
 				var pw=drops[index].left+drops[index].width;
 				if(top+height/2>drops[index].top && left+width/2>drops[index].left && left+width/2<pw && top+height/2<ph){
 					drops[index].ele[0].appendChild(self[0]);
+					self.css({'top':'0px','left':'0px','z-index':1});
+					return;
 //					console.log("true");
 				}
 //				drops[index];
