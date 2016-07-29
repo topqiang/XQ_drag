@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8"><meta>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="XQ_drag.js"></script>
+		<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+			.drop{
+				width: 400px;
+				height: 200px;
+				display: block;
+				border: 1px solid #F05B4F;
+			}
+			.drag{
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+				display: inline-block;
+				border: 2px solid #000000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="drop" xq_drop="true"></div>
+		<div class="drop" xq_drop="true"></div>
+		<div class="drop" xq_drop="true"></div>
+		<div class="drag" xq_drag="true">
+			<img  src="favicon.ico" ondragstart="return false"/>
+		</div>
+		<div class="drag" xq_drag="true">
+			<img  src="logo.png" ondragstart="return false"/>
+		</div>
+		<div class="drag" xq_drag="true">
+			<img  src="5.jpg" ondragstart="return false"/>
+		</div>
+		<div class="drag" xq_drag="true">
+			牛逼到不行
+		</div>
+	</body>
+</html>
