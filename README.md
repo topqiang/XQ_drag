@@ -28,13 +28,13 @@ https://topqiang.github.io/XQ_drag/dragdemo.html
   
     <div class="drop" xq_drop="true"></div>  //xq_drop="true" 该属性标注可以存放拖拽对象的区域
     
-		<div class="drag" xq_drag="true">         //xq_drag="true"  该属性用来标注可以拖拽的对象
+		<div class="drag" xq_drag="true" id="1">         //xq_drag="true"  该属性用来标注可以拖拽的对象,id属性非常重要，他是当前元素的唯一标识
 		
 			<img  src="favicon.ico" ondragstart="return false"/>    //  里面可以放图片哦， ondragstart="return false" 一定要加上该属性哦，不然浏览器会在新的窗口打开该图片
 			
 		</div>
 		
-		<div class="drag" xq_drag="true">牛逼到不行</div>       //里面也可以放文字元素哦！
+		<div class="drag" xq_drag="true" id="2">牛逼到不行</div>       //里面也可以放文字元素哦！
 		
   </code>
 <h3>4.那么配置参数都有那些呢？</h3>
@@ -45,6 +45,8 @@ https://topqiang.github.io/XQ_drag/dragdemo.html
 
 嘿嘿 这个不用担心，该插件会自动在文档加载完成后启动赋予您配置元素以神器的效果。看看神器吧！
 
+<h3>6.拖拽之后如何获取指定区域的数据呢？</h3>
+$("dropelem").getDropData();获取到指定存放区域内可拖拽对象的id集合，返回类型为数组。
 
 
 再次特请各位大牛指出不足。
