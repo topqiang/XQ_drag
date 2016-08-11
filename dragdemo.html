@@ -9,36 +9,42 @@
 			margin: 0px;
 			padding: 0px;
 		}
-			.drop{
-				width: 400px;
-				height: 200px;
-				display: block;
-				border: 1px solid #F05B4F;
-			}
-			.drag{
-				width: 100px;
-				height: 100px;
-				overflow: hidden;
-				display: inline-block;
-				border: 2px solid #000000;
-			}
+		.drop{
+			width: 400px;
+			min-height: 200px;
+			display: block;
+			border: 1px solid #F05B4F;
+		}
+		.drag{
+			width: 100px;
+			height: 100px;
+			overflow: hidden;
+			display: inline-block;
+			border: 2px solid #000000;
+		}
+		.drag img{
+			width: 100%;
+			height: 100%;
+		}
 		</style>
 	</head>
 	<body>
-		<div class="drop" xq_drop="true"></div>
-		<div class="drop" xq_drop="true"></div>
-		<div class="drop" xq_drop="true"></div>
-		<div class="drag" xq_drag="true">
-			<img  src="favicon.ico" ondragstart="return false"/>
+		<div class="drop" xq_drop="true" style="background:#fe631a"></div>
+		<div class="drop" xq_drop="true" style="background:#fc83bc">
+			<div class="drag" xq_drag="true" id="1">
+				<img  src="2.png" ondragstart="return false"/>
+			</div>
+			<div class="drag" xq_drag="true" id="2">
+				<img  src="logo.png" ondragstart="return false"/>
+			</div>
 		</div>
-		<div class="drag" xq_drag="true">
-			<img  src="logo.png" ondragstart="return false"/>
-		</div>
-		<div class="drag" xq_drag="true">
-			<img  src="5.jpg" ondragstart="return false"/>
-		</div>
-		<div class="drag" xq_drag="true">
-			牛逼到不行
+		<div class="drop" xq_drop="true" style="background:#bca31a">
+			<div class="drag" xq_drag="true" id="3">
+				<img  src="5.png" ondragstart="return false"/>
+			</div>
+			<div class="drag" xq_drag="true" id="4">
+				拖我试试看
+			</div>
 		</div>
 	</body>
 </html>
